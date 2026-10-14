@@ -1,0 +1,13 @@
+{
+ "name": "i2_r1",
+ "attacks": "attacks_train_r0.jsonl",
+ "rank": 16,
+ "lr": 0.0001,
+ "lam": 1.0,
+ "epochs": 1,
+ "max_neg": 6,
+ "token_budget": 12000,
+ "seed": 0,
+ "smoke": false,
+ "model": "Qwen/Qwen3.5-2B"
+}

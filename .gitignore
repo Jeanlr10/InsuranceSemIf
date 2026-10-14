@@ -1,0 +1,9 @@
+audit/
+__pycache__/
+*.pyc
+runs/
+paper/*.aux
+paper/*.log
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out

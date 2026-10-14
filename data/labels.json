@@ -1,0 +1,15 @@
+{
+  "_rule": "A clause is relevant if a reviewer must read it to decide the claim. Clauses that apply to every claim (definitions, eligibility, filing, appeals, cost sharing) are not labeled unless the claim is about them. Written by hand, by the same person who wrote the policy and claims.",
+  "labels": {
+    "S01": ["§2.4", "§3.2", "§2.9"],
+    "S02": ["§2.1"],
+    "S03": ["§4.1", "§2.3"],
+    "S04": ["§4.5"],
+    "S05": ["§2.9", "§3.1"],
+    "S06": ["§4.4", "§3.1"],
+    "S07": ["§4.1", "§2.3"],
+    "S08": ["§2.5", "§3.1", "§4.2"],
+    "S09": ["§2.8"],
+    "S10": ["§4.1", "§2.3"]
+  }
+}

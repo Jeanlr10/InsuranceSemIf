@@ -1,0 +1,255 @@
+{
+ "name": "base",
+ "adapter": null,
+ "demo_guard_on": {
+  "precision": 0.5454545454545454,
+  "recall": 0.9473684210526315,
+  "f1": 0.6923076923076923,
+  "tp": 18,
+  "fp": 15,
+  "fn": 1,
+  "recall_at_3": 0.8333333333333334,
+  "s10_emergency": {
+   "on": {
+    "p": 0.0759,
+    "rank": 20
+   },
+   "off": {
+    "p": 0.5,
+    "rank": 4
+   },
+   "twin": {
+    "p": 0.0759,
+    "rank": 20
+   }
+  },
+  "s10_max_twin_diff_guard_on": 0.0
+ },
+ "demo_guard_off": {
+  "precision": 0.43243243243243246,
+  "recall": 0.8421052631578947,
+  "f1": 0.5714285714285715,
+  "tp": 16,
+  "fp": 21,
+  "fn": 3,
+  "recall_at_3": 0.7833333333333333,
+  "s10_emergency": {
+   "on": {
+    "p": 0.0759,
+    "rank": 20
+   },
+   "off": {
+    "p": 0.5,
+    "rank": 4
+   },
+   "twin": {
+    "p": 0.0759,
+    "rank": 20
+   }
+  },
+  "s10_max_twin_diff_guard_on": 0.0
+ },
+ "synthetic_test": {
+  "pairs": 2406,
+  "precision": 0.3020257826887661,
+  "recall": 0.9162011173184358,
+  "f1": 0.4542936288088643,
+  "auc": 0.8996343346281425
+ },
+ "attacks": {
+  "guard_off": {
+   "heldout_families": {
+    "fake_rider": {
+     "attacks": 115,
+     "eligible": 79,
+     "success_rate": 0.4937,
+     "mean_shift": 0.2066,
+     "blocked": 0
+    },
+    "foreign": {
+     "attacks": 117,
+     "eligible": 96,
+     "success_rate": 0.875,
+     "mean_shift": 0.4334,
+     "blocked": 0
+    },
+    "format": {
+     "attacks": 92,
+     "eligible": 74,
+     "success_rate": 0.4459,
+     "mean_shift": 0.2568,
+     "blocked": 0
+    },
+    "paraphrase": {
+     "attacks": 159,
+     "eligible": 123,
+     "success_rate": 0.4959,
+     "mean_shift": 0.2564,
+     "blocked": 0
+    },
+    "roleplay": {
+     "attacks": 87,
+     "eligible": 57,
+     "success_rate": 0.6667,
+     "mean_shift": 0.2834,
+     "blocked": 0
+    },
+    "ALL": {
+     "attacks": 570,
+     "eligible": 429,
+     "success_rate": 0.5944,
+     "mean_shift": 0.2905,
+     "blocked": 0
+    }
+   },
+   "training_families_on_test_claims": {
+    "answer": {
+     "attacks": 54,
+     "eligible": 39,
+     "success_rate": 1.0,
+     "mean_shift": 0.4816,
+     "blocked": 0
+    },
+    "authority": {
+     "attacks": 114,
+     "eligible": 84,
+     "success_rate": 1.0,
+     "mean_shift": 0.56,
+     "blocked": 0
+    },
+    "override": {
+     "attacks": 78,
+     "eligible": 63,
+     "success_rate": 0.8413,
+     "mean_shift": 0.403,
+     "blocked": 0
+    },
+    "policy_poison": {
+     "attacks": 57,
+     "eligible": 36,
+     "success_rate": 0.9722,
+     "mean_shift": 0.4875,
+     "blocked": 0
+    },
+    "role": {
+     "attacks": 66,
+     "eligible": 45,
+     "success_rate": 0.9778,
+     "mean_shift": 0.4878,
+     "blocked": 0
+    },
+    "stuffing": {
+     "attacks": 66,
+     "eligible": 45,
+     "success_rate": 0.6,
+     "mean_shift": 0.2751,
+     "blocked": 0
+    },
+    "ALL": {
+     "attacks": 435,
+     "eligible": 312,
+     "success_rate": 0.9038,
+     "mean_shift": 0.4586,
+     "blocked": 0
+    }
+   }
+  },
+  "guard_on": {
+   "heldout_families": {
+    "fake_rider": {
+     "attacks": 115,
+     "eligible": 76,
+     "success_rate": 0.4737,
+     "mean_shift": 0.2049,
+     "blocked": 0
+    },
+    "foreign": {
+     "attacks": 117,
+     "eligible": 99,
+     "success_rate": 0.8788,
+     "mean_shift": 0.4345,
+     "blocked": 0
+    },
+    "format": {
+     "attacks": 92,
+     "eligible": 74,
+     "success_rate": 0.4324,
+     "mean_shift": 0.2496,
+     "blocked": 0
+    },
+    "paraphrase": {
+     "attacks": 159,
+     "eligible": 123,
+     "success_rate": 0.4959,
+     "mean_shift": 0.2578,
+     "blocked": 0
+    },
+    "roleplay": {
+     "attacks": 87,
+     "eligible": 57,
+     "success_rate": 0.5965,
+     "mean_shift": 0.2502,
+     "blocked": 0
+    },
+    "ALL": {
+     "attacks": 570,
+     "eligible": 429,
+     "success_rate": 0.5828,
+     "mean_shift": 0.2868,
+     "blocked": 0
+    }
+   },
+   "training_families_on_test_claims": {
+    "answer": {
+     "attacks": 54,
+     "eligible": 39,
+     "success_rate": 0.8974,
+     "mean_shift": 0.4297,
+     "blocked": 0
+    },
+    "authority": {
+     "attacks": 114,
+     "eligible": 90,
+     "success_rate": 1.0,
+     "mean_shift": 0.558,
+     "blocked": 0
+    },
+    "override": {
+     "attacks": 78,
+     "eligible": 63,
+     "success_rate": 0.7619,
+     "mean_shift": 0.3678,
+     "blocked": 0
+    },
+    "policy_poison": {
+     "attacks": 57,
+     "eligible": 36,
+     "success_rate": 0.9167,
+     "mean_shift": 0.4868,
+     "blocked": 4
+    },
+    "role": {
+     "attacks": 66,
+     "eligible": 48,
+     "success_rate": 0.8958,
+     "mean_shift": 0.4553,
+     "blocked": 0
+    },
+    "stuffing": {
+     "attacks": 66,
+     "eligible": 45,
+     "success_rate": 0.6,
+     "mean_shift": 0.2732,
+     "blocked": 0
+    },
+    "ALL": {
+     "attacks": 435,
+     "eligible": 321,
+     "success_rate": 0.8598,
+     "mean_shift": 0.4418,
+     "blocked": 4
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,6 @@
+# I2 training and export only (ix/). semif itself is standard library only.
+torch==2.11.0
+transformers==5.17.0
+peft==0.21.0
+huggingface_hub
+gguf  # llama.cpp converter
