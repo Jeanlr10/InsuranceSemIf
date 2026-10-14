@@ -1,34 +1,25 @@
-\documentclass[10pt,twocolumn]{article}
-\usepackage[letterpaper,margin=0.66in,top=0.6in,bottom=0.7in,columnsep=0.26in]{geometry}
+\documentclass[conference]{IEEEtran}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{tikz}
-\usepackage[font=small,labelfont=bf]{caption}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
-\usepackage{titlesec}
-\titlespacing*{\section}{0pt}{1.0ex plus .3ex}{0.6ex}
-\titleformat*{\section}{\large\bfseries}
 
 \definecolor{base}{HTML}{B8B8B8}
 \definecolor{ours}{HTML}{1F5FA8}
 \newcommand{\pct}[1]{#1\%}
 
-\title{\Large\bfseries InsuranceSemIf: Injection-Resistant Policy Clause Triage\\
-       with a Small Adversarially Trained Model}
-\author{Jean-Luc Robitaille\\
-        \small\texttt{jlr@robitaille.us}}
-\date{\small October 2026}
-
 \begin{document}
-\twocolumn[
+
+\title{InsuranceSemIf: Injection-Resistant Policy Clause Triage\\
+       with a Small Adversarially Trained Model}
+\author{\IEEEauthorblockN{Jean-Luc Robitaille}
+\IEEEauthorblockA{\texttt{jlr@robitaille.us}\\October 2026}}
 \maketitle
-\begin{center}
-\begin{minipage}{0.86\textwidth}
-\small\textbf{Abstract.}
+
+\begin{abstract}
 Language models that read untrusted documents can be steered by instructions hidden in those documents. We study
 this risk in a narrow, auditable task: given an insurance claim and a policy, rank the clauses a human reviewer must
 read. The system never decides coverage. We first build a deterministic baseline (BM25 with an input guard and a
@@ -37,10 +28,7 @@ a KL invariance term between clean and attacked inputs. On held-out policies and
 \emph{different} model in five attack styles never seen in training, attack success falls from \pct{59.4} to
 \pct{1.0}, while F1 on 2{,}406 test pairs rises from 0.45 to 0.87. The model runs on a laptop CPU. All data is
 synthetic, and total API spend was under \$0.50.
-\end{minipage}
-\end{center}
-\vspace{1.2em}
-]
+\end{abstract}
 
 \section{Problem}
 Claims reviewers decide coverage by reading the clauses that govern a claim. A tool that ranks clauses saves time,
@@ -190,10 +178,9 @@ roughly 60$\times$ while also improving accuracy. Treating injection resistance 
 and keeping deterministic controls around the model, gives a defence that can be both tested and audited.
 
 \vspace{0.4em}
-\noindent\small Code, data and evaluation (MIT): \texttt{InsuranceSemIf} repository.
+\noindent Code, data and evaluation (MIT): \texttt{InsuranceSemIf} repository.
 
-\footnotesize
-\begin{thebibliography}{9}\itemsep0pt
+\begin{thebibliography}{9}
 \bibitem{greshake2023} K.~Greshake, S.~Abdelnabi, S.~Mishra, C.~Endres, T.~Holz, and M.~Fritz,
   ``Not what you've signed up for: Compromising real-world LLM-integrated applications with indirect prompt
   injection,'' in \emph{Proc.\ 16th ACM Workshop Artif.\ Intell.\ Secur.\ (AISec)}, 2023.
